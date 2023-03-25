@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@100;200;500;600&display=swap');
+:root{
+    --bg-color: #e6e6e6;
+
+    --service-holding-container-bgclr: #ffffff;
+    --service-holding-container-width: 100vw;
+    --service-holding-container-height:100vh;
+
+    --service--container-bgclr: #dbdbdb;
+
+    --top-bottom-banner-clr: #004aad;
+
+    --article-card-header-font: 'Poppins', sans-serif;
+    --article-card-content-font: 'Poppins', sans-serif;
+}
+
+body{
+    position: relative;
+    background-color: var(--service-holding-container-bgclr);
+    width: var(--service-holding-container-width);
+    height: var(--service-holding-container-height);
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+/* #app{
+
+} */
+#app .header{
+    background-color: var(--top-bottom-banner-clr) ;
+    width: 100vw;
+    height: 13.15vh;
+    display: flex;
+    position: relative;
+}
+#app .header #img-logo{
+    width: 5.5vw;
+    height: 11vh;
+    position: inherit;
+    left: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#app .header #input-box{
+    background-color: var(--service-holding-container-bgclr);
+    position: relative;
+    width: 32.28vw;
+    height: 7vh;
+    left: 7vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 30px;
+    border: none;
+}
+#app .header #search{
+    position: relative;
+    width: 3vw;
+    height: 6vh;
+    left: 3.6vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#app .header p{
+    position:inherit;
+    color: #ffffff;
+    font-size: 3.7vh;
+    left: 7vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.7px;
+
+}
+#app .header #menu-btn{
+    position: relative;
+    width: auto;
+    height: 5vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 7.3vw;
+}
+#app .header #add-btn{
+    position: relative;
+    color: #ffffff;
+    width:10vw;
+    height: 5vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 35vw;
+    border-radius: 15px;
+    background-color: rgba(0, 0,0, 0.2);
+    border: none;
+    letter-spacing: 2px;
+    font-family: 'Open sans', sans-serif;
+}
+#app .slide-show{
+    display: flex;
+}
+#app .slide-show img{
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+}
+#app .slide-show p{
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+}
+#app .footer{
+    background-color: var(--top-bottom-banner-clr);
+    width: 100vw;
+    height: 30vh;
+    position: relative;
+    top: 60vh;
+}

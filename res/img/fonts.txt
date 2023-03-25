@@ -1,0 +1,19 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@100;200;500;600&display=swap');
+</style>
+
+article header -> "popins" 500 or 600weight
+
+article subheader, dianatext -> "popins" 200 or 100weight
+
+time to read, play as audio , searchbar holder, 
+article content, list article shortcontent ,
+topicmenu, chatbox, nextand prev. play and pause -> "open sans" 300wt
+
+top bar @topic, read more header, designed and dev by -> "open sans 400wt"
+
+readmore under header, cresteem, follow,
+scrol to explore,list articleheader,write yr ques,
+audio conheader -> "open sans" 500wt
+
+landing page slideshow header - popins 500wt
