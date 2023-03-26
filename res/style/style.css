@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@100;200;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;500;600&display=swap');
 :root{
     --bg-color: #e6e6e6;
 
@@ -23,13 +23,13 @@ body{
     overflow-x: hidden;
 }
 
-/* #app{
-
-} */
+/* header container start*/
 #app .header{
     background-color: var(--top-bottom-banner-clr) ;
     width: 100vw;
-    height: 14vh;
+    min-width: calc(100vw / 100vw * 100);
+    height: 15vh;
+    min-height:15vh;
     display: flex;
     position: relative;
 }
@@ -51,10 +51,21 @@ body{
     margin-bottom: auto;
     border-radius: 30px;
     border: none;
+    text-align:center;
+    font-family:  'open sans' , sans-serif;
+    font-size: 3.9vh;
+    font-weight: 300;
+    user-select: none;
 }
-#app .header #input-box{
-    
+#app .header #input-box::placeholder{
+    position: relative;
+    color: black;
+    letter-spacing: 1px;
 }
+#app .header #input-box:focus{
+    outline: 0;
+}
+
 #app .header #search{
     position: relative;
     width: 3vw;
@@ -71,6 +82,8 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     letter-spacing: 1.7px;
+    margin-top: auto;
+    margin-bottom: auto;
 
 }
 #app .header #menu-btn{
@@ -95,8 +108,15 @@ body{
     letter-spacing: 2px;
     font-family: 'Open sans', sans-serif;
 }
+/* header container end */
+
+/* ---------------------------------------------------------- */
+
+/* slide-show container start */
 #app .slide-show{
     display: grid;
+    width: 100vw;
+    height: 70vh;
 }
 #app .slide-show img{
     position: relative;
@@ -107,16 +127,156 @@ body{
     position: relative;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    color: #ffffff;
     width: 50vw;
     font-size:8vh;
     top: -35vw;
     z-index: 100;
     left: 5vw;
 }
-#app .footer{
-    background-color: var(--top-bottom-banner-clr);
+/* slide-show container end */
+
+/* ---------------------------------------------------------- */
+
+/* scroller container start */
+#app #scroller{
+    display: grid;
+    position: relative;
     width: 100vw;
     height: 30vh;
+}
+#app #scroller #scrol-indicator{
     position: relative;
-    top: 60vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    top: 2vh;
+    font-size:4.33vh;
+    left:30%;
+}
+#app #scroller #scrol-img{
+    position: relative;
+    width: auto;
+    top: -3vh;
+    height: 8vh ;
+    left: 40%;
+}
+/* scroller-show container end */
+
+/* ---------------------------------------------------------- */
+
+/* content-holder container start*/
+#app .content-holder{
+    position: relative;
+    width: 60vw;
+    height: 38vh;
+    left: 10%;
+    top: -10vh;
+    border-radius: 40PX;
+    margin-bottom: 5vh;
+    background-color: var(--service--container-bgclr) ;
+}
+#app .content-holder h6{
+    position: relative;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 800;
+    font-size: 2.2vw;
+    width: 40vw;
+    left: 5%;
+    top: 8%;
+}
+#app .content-holder p{
+    position: relative;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    width: 40vw;
+    left: 5%;
+    top: -12%;
+    font: bold;  
+}
+#app .content-holder img{
+    position: relative;
+    height: 25vh;
+    width: 13.7vw;
+    float: right;
+    top: -80%;
+    right: 4%;
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+}
+/* content-holder container end*/
+
+/* ---------------------------------------------------------- */
+
+/* footer container start*/
+#app .footer{
+    position: relative;
+    background-color: var(--top-bottom-banner-clr);
+    width: 100vw;
+    height: 40vh;
+    top: 20vh;
+}
+#app .footer #dev :first-child{
+    position: relative;
+    font-family: 'Open sans' , sans-serif;
+    font-weight: 400;
+    font-size: 5vh;
+    font: bold;
+    top: 12vh;
+    left: 5%;
+}
+#app .footer #dev :nth-child(2){
+    position: relative;
+    font-family: 'Open sans' , sans-serif;
+    font-weight: 600;
+    font-size: 8vh;
+    font: bold;
+    top: 2vh;
+    left: 4%;
+    letter-spacing: 27px;
+}
+#app .footer #dev :last-child{
+    height: 4.5vh;
+    width: auto;
+    position: relative;
+    left: 37vw;
+    top: -14.5vh;
+}
+
+#app .footer #social-medias{
+    display: grid;
+    grid-template-rows: 20vh 20vh;
+    position: absolute;
+    top: -5vh;
+    left: 70%;
+    column-gap: 15px;
+
+}
+#app .footer #social-medias img{
+    width: 7vw;
+    height: auto;
+}
+
+.footer #social-medias :first-child{
+    grid-row: 1/2;
+    grid-column: 1/4;
+    font-family: 'Open sans',sans-serif;
+    font-weight: 700;
+    font-size: 8vh;
+    color: #ffffff;
+}
+
+.footer #social-medias img:nth-child(1){
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.footer #social-medias img:nth-child(2){
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.footer #social-medias img:nth-child(3){
+    grid-row: 2/3;
+    grid-column: 3/4;
 }
