@@ -181,7 +181,7 @@ body{
     color: #ffffff;
     width: 50vw;
     font-size:8vh;
-    /* top: -35vw; */
+    top: 25vh;
     z-index: 100;
     left: 5vw;
     animation-name: slide-text;
