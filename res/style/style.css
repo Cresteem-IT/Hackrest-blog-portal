@@ -54,7 +54,8 @@ body{
     text-align:center;
     font-family:  'open sans' , sans-serif;
     font-size: 3.9vh;
-    font-weight: 300;
+    font-weight: 400;
+    /* font: bold; */
     user-select: none;
 }
 #app .header #input-box::placeholder{
@@ -105,8 +106,10 @@ body{
     border-radius: 15px;
     background-color: rgba(0, 0,0, 0.2);
     border: none;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     font-family: 'Open sans', sans-serif;
+    font-weight: 700;
+    /* box-shadow: 0px 0px 8px 0px black; */
 }
 /* header container end */
 
@@ -118,12 +121,48 @@ body{
     width: 100vw;
     height: 70vh;
 }
-#app .slide-show img{
+#app .slide-show div{
     position: relative;
     width: 100vw;
     height: 70vh;
+    background-size:cover;
+    object-fit: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: slide-show;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
-#app .slide-show p{
+
+@keyframes slide-show {
+   0%{
+    background-image: url(../img/slide-show-1.jpg);
+    width: 100vw;
+    height: 70vh;
+   }
+   25%{
+    background-image: url(../img/slide-show-2.jpg);
+    width: 100vw;
+    height: 70vh;
+   }
+   50%{
+    background-image: url(../img/slide-show-3.jpg);
+    width: 100vw;
+    height: 70vh;
+   }
+   75%{
+    background-image: url(../img/slide-show-4.jpg);
+    width: 100vw;
+    height: 70vh;
+   }
+   100%{
+    background-image: url(../img/slide-show-5.jpg);
+    width: 100vw;
+    height: 70vh;
+   }
+}
+/* #app .slide-show p{
     position: relative;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -133,6 +172,39 @@ body{
     top: -35vw;
     z-index: 100;
     left: 5vw;
+} */
+#app .slide-show::after{
+    content: 'Now, here comes the next part “the social engineering”, now figure out a way and use some';
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    width: 50vw;
+    font-size:8vh;
+    top: -35vw;
+    z-index: 100;
+    left: 5vw;
+    animation-name: slide-text;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes slide-text{
+    0%{
+        content: 'Career Cheat Codes I Know at 36 That I Wish I Knew at 26 (A)';
+    }
+    25%{
+        content: 'How to hack any social media account?  (B)';
+    }
+    50%{
+        content: 'How to use chatGPT for UI/UX design: 25 examples (C)';
+    }
+    75%{
+        content: 'How I made ~5$ per day — in Passive Income (with an android app) (D)';
+    }
+    100%{
+        content: '@Heading chatGPT for UI/UX design: (E)';
+    }
 }
 /* slide-show container end */
 
@@ -170,37 +242,38 @@ body{
     width: 60vw;
     height: 38vh;
     left: 10%;
-    top: -10vh;
+    top: -5vh;
     border-radius: 40PX;
     margin-bottom: 5vh;
     background-color: var(--service--container-bgclr) ;
 }
 #app .content-holder h6{
-    position: relative;
+    position: absolute;
     font-family: 'Open sans', sans-serif;
     font-weight: 800;
     font-size: 2.2vw;
     width: 40vw;
     left: 5%;
-    top: 8%;
+    top: -15%;
 }
 #app .content-holder p{
-    position: relative;
+    position: absolute;
     font-family: 'Open sans', sans-serif;
     font-weight: 400;
     font-size: 1.5vw;
     width: 40vw;
     left: 5%;
-    top: -12%;
+    top: 40%;
     font: bold;  
 }
 #app .content-holder img{
-    position: relative;
+    position: absolute;
     height: 25vh;
     width: 13.7vw;
     float: right;
-    top: -80%;
-    right: 4%;
+    top: 17%;
+    text-align: center;
+    right: 3%;
     border-color: #ffffff;
     border-style: solid;
     border-width: 5px;
