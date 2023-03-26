@@ -175,13 +175,13 @@ body{
 } */
 #app .slide-show::after{
     content: 'Now, here comes the next part “the social engineering”, now figure out a way and use some';
-    position: relative;
+    position: absolute;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #ffffff;
     width: 50vw;
     font-size:8vh;
-    top: -35vw;
+    /* top: -35vw; */
     z-index: 100;
     left: 5vw;
     animation-name: slide-text;
