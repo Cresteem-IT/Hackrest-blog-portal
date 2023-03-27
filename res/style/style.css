@@ -495,3 +495,117 @@ body{
     transition-timing-function: linear;
     transform: scale(1.2);
 }
+
+/* -------------------------------------------------------------- */
+
+/* chat-bogt container start */
+#chat-bot{
+    visibility: hidden;
+    width: 26vw;
+    height: 73vh;
+    background-color: rgb(218, 218, 218);
+    position: fixed;
+    border-radius: 15px;
+    bottom: 10vh;
+    right: 0vw;
+    z-index: 100;
+}
+
+#chat-bot #header-bot{
+    height: 12vh;
+    background-color:  #004aad;
+    border-radius: 15px;
+}
+#chat-bot #header-bot #diana{
+    position: absolute;
+    height: 8vh;
+    width: 4.5vw;
+    top: 2vh;
+    left: 2vw;
+    border-radius:100%;
+    box-shadow: 0px 0px 0px 5px white;
+    float:left;
+}
+#chat-bot #header-bot img{
+    position: absolute;
+    height:auto;
+    width: 3.5vw;
+    top: 0.5vh;
+    left: 0.5vw;
+}
+#chat-bot #bot-name{
+    position: absolute;
+    font-size: 5vh;
+    left:8vw;
+    top: -2.5vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+#chat-bot .user{
+    position: absolute;
+    height: 8vh;
+    width: 17.13vw;
+    background-color: rgb(162, 189, 225);
+    border-radius: 55px;
+}
+
+#chat-bot .user:nth-child(2){
+    position: absolute;
+    bottom: 4vh;
+    right: 1vw;
+    background-color: rgb(162, 189, 225);
+}
+#chat-bot .user:nth-child(3){
+    bottom: 32vh;
+    right: 1vw;
+    background-color: rgb(162, 189, 225);
+}
+
+#chat-bot .bot{
+    position: absolute;
+    height: 8vh;
+    width: 17.13vw;
+    background-color: rgb(162, 189, 225);
+    border-radius: 55px;
+
+}
+#chat-bot .bot:nth-child(4){
+    bottom: 18vh;
+    left: 1vw;
+}
+#chat-bot .bot:nth-child(5){
+    top: 18vh;
+    left: 1vw;
+}
+/* chat-bogt container end */
+
+/* msg-header container start */
+#msg-header{
+    position: fixed;
+    display: flex;
+    width: 26vw;
+    height: 8vh;
+    bottom: 0vh;
+    right: 0vw;
+    border-radius: 10px;
+    background-color: rgb(218, 218, 218);
+    z-index: 200;
+}
+#msg-header img{
+    position: absolute; 
+    top: 0.6vh;
+    left: 1vw;
+    width: 3.5vw;
+    height: 6.5vh;
+}
+#msg-header p{
+    position: absolute;
+    top:-1vh;
+    left: 10vh;
+    font-size: 3vh;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 800;
+}
+/* msg-header container end */
