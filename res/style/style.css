@@ -155,27 +155,27 @@ body{
    0%{
     background-image: url(../img/slide-show-1.jpg);
     width: 100vw;
-    height: 70vh;
+    height: 67vh;
    }
    25%{
     background-image: url(../img/slide-show-2.jpg);
     width: 100vw;
-    height: 70vh;
+    height: 67vh;
    }
    50%{
     background-image: url(../img/slide-show-3.jpg);
     width: 100vw;
-    height: 70vh;
+    height: 67vh;
    }
    75%{
     background-image: url(../img/slide-show-4.jpg);
     width: 100vw;
-    height: 70vh;
+    height: 67vh;
    }
    100%{
     background-image: url(../img/slide-show-5.jpg);
     width: 100vw;
-    height: 70vh;
+    height: 67vh;
    }
 }
 
@@ -222,21 +222,51 @@ body{
     position: relative;
     width: 100vw;
     height: 30vh;
+    top: -10vh;
 }
 #app #scroller #scrol-indicator{
     position: relative;
+    /* color: #ffffff; */
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
+    margin-left: auto;
+    margin-right: auto;
     top: 2vh;
     font-size:4.33vh;
-    left:30%;
+    letter-spacing: 2px;
 }
 #app #scroller #scrol-img{
     position: relative;
     width: auto;
-    top: -3vh;
+    top: -8vh;
     height: 8vh ;
-    left: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: drop-down;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-direction: alternate ;
+    animation-iteration-count: infinite;
+}
+@keyframes drop-down {
+    0%{
+        top:-2vh;
+    }
+    20%{
+        top:-6vh;
+    }
+    40%{
+        top:-2vh;
+    }
+    60%{
+        top:-6vh;
+    }
+    80%{
+        top:-2vh;
+    }
+    100%{
+        top:-6vh;
+    }
 }
 /* scroller-show container end */
 
