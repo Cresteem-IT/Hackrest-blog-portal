@@ -16,11 +16,14 @@
     --read-play-text-size: 3.38vh;
     --read-play-text-font-weight: 400;
     
-    --article-content: 3.64vh;
+    --article-content-font-size: 3.64vh;
+    --article-content-font: 'Open Sans', sans-serif;
+    --article-content-font-weight: 400;
+    --article-content-width: 64.5vw;
 
     --more-article-card-header-font: 'Open Sans', sans-serif;
-    --more-article-card-header-font-size: 26vh;
-    --more-article-card-header-font-weight: 500;
+    --more-article-card-header-font-size: 4vh;
+    --more-article-card-header-font-weight: 600;
     --left-margin: 3.95vw;
 
 }
@@ -99,3 +102,112 @@
     font-size: var(--read-play-text-size);
     font-weight: var(--read-play-text-font-weight);
 }
+
+/* 1 to 6 child p of parent */
+#article-body :nth-child(-n + 6){
+    position: relative;
+    font-size: var(--article-content-font-size);
+    font-family: var(--article-content-font);
+    font-weight: var(--article-content-font-weight);
+    width: var(--article-content-width);
+    letter-spacing: 0.5px;
+    word-spacing: 0.2ch;
+    line-height: 3ch;
+    text-align: justify;
+    top: -5vh;
+    color: rgb(41, 40, 40);
+    margin-bottom: 60px;
+}
+
+#article-body :first-child::first-letter{
+    font-size: calc(var(--article-content-font-size) + 2ch);
+    font-weight:500;
+}
+
+#article-body :first-child::first-line{
+    position: relative;
+    font-weight: 500;
+}
+
+#article-suggestion #cards{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    column-gap: 20px;
+}
+
+#article-suggestion #cards .card{
+    display: flex;
+    background-color: black;
+    border-radius: 60px;
+    width: 20vw;
+    height: 36vh;
+    text-align:center;
+    z-index: 0;
+}
+
+#article-suggestion #cards .card:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#article-suggestion #cards .card:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#article-suggestion #cards .card:nth-child(3){
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#article-suggestion #cards #last-card{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: black;
+    width: 1vw;
+    height: 36vh;
+    border-radius: 60px;
+    z-index: 0;
+}
+
+#article-suggestion #cards #last-card #next-article{
+    height: 11vh;
+    width: auto;
+    position: relative;
+    top:100px;
+    left: -18px;
+    box-shadow: 0px 0px 0px 5px rgb(202, 202, 202);
+    border-radius: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+/* card content header */
+.card p{
+    position: relative;
+    color: white;
+    font-family: var(--more-article-card-header-font);
+    font-size: var(--more-article-card-header-font-size) !important;
+    font-weight: var(--more-article-card-header-font-weight) !important;
+    padding-left: 25px;
+    padding-right: 25px;
+    top: -20px;
+    z-index: 1;
+}
+
+#cards .card img{
+    position: relative;
+    width: 18.8vw;
+    height: 15.6vh;
+    z-index: -1;
+    top: 16vh;
+    left: -200px;
+    border-radius: 20px;
+}
+
+/* readmore */
+#article-suggestion :first-child{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 5.46vh;
+}
+
+
