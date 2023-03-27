@@ -1,8 +1,23 @@
 #search-results{
     position: relative;
-    top: 100px;
+    top: 40vh;
 }
 
-.header+h1{
-    font-size: 'Poppins', sans-serif !important;
+#context{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2,auto);
+    position: absolute;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 800;
+    font-size: 5vh;
+    left: 10vw;
+    letter-spacing: 0.2ch;
+}
+
+#context p{
+    position:relative;
+    font-size: 7vh;
+    align-self: center;
+    font-weight: 600;
 }
