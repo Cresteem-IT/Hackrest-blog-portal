@@ -8,7 +8,7 @@
 
     --service--container-bgclr: #dbdbdb;
 
-    --top-bottom-banner-clr: #004aad;
+    --top-bottom-banner-clr: rgb(0, 74, 173);
 
     --article-card-header-font: 'Poppins', sans-serif;
     --article-card-content-font: 'Poppins', sans-serif;
@@ -399,26 +399,26 @@ body{
     grid-template-rows: repeat(8, 2vh);
     row-gap: 45px;
     column-gap: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255,0.2);
     top: 12vh;
     width: 55vw;
     height: 65vh;
-    justify-content: center;
     z-index: 200;
     position: relative;
     left: -25vw;
     border-radius: 10px;
-
+    cursor:pointer;
+    justify-content: center;
 }
 #app .header #menu-bar p{
     display: flex;
-    justify-content: center;
     left: 0vw;
     top: 2.5vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 74, 173,0.9);
     height: 6vh;
     font-size: 20px;
     border-radius: 15px;
+    justify-content: center;
 }
 
 #menu-bar:nth-child(1){
@@ -487,4 +487,11 @@ body{
 #menu-bar:nth-child(16){
     grid-row:8/9;
     grid-column: 2/3;
+}
+
+#menu-btn:hover{
+    transition-property: transform;
+    transition-duration: 10ms;
+    transition-timing-function: linear;
+    transform: scale(1.2);
 }

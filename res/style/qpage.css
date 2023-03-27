@@ -1,0 +1,8 @@
+#search-results{
+    position: relative;
+    top: 100px;
+}
+
+.header+h1{
+    font-size: 'Poppins', sans-serif !important;
+}
