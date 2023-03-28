@@ -17,3 +17,15 @@ $('#scroller').on('click',()=>{
 $('#img-logo').on('click',()=>{
     window.location.assign('/');
 });
+
+$(document).ready(()=>{
+    $('#msg-header').on('click',()=>{
+        $('#chat-bot').css('visibility','visible');
+        $('#msg-header').css('visibility','hidden');
+    });
+    
+    $('#cls-btn').on('click',()=>{
+        $('#chat-bot').css('visibility','hidden');
+        $('#msg-header').css('visibility','visible');
+    });
+});
