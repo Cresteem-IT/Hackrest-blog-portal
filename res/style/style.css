@@ -55,7 +55,6 @@ body{
     font-family:  'open sans' , sans-serif;
     font-size: 3.9vh;
     font-weight: 400;
-    /* font: bold; */
     user-select: none;
 }
 #app .header #input-box::placeholder{
@@ -86,7 +85,6 @@ body{
     letter-spacing: 1.7px;
     margin-top: auto;
     margin-bottom: auto;
-
 }
 #app .header #menu-btn{
     position: relative;
@@ -100,7 +98,7 @@ body{
     display: flex;
     position: relative;
     color: #ffffff;
-    width:14vw;
+    width:16vw;
     height: 5vh;
     margin-top: auto;
     margin-bottom: auto;
@@ -108,7 +106,6 @@ body{
     border-radius: 15px;
     background-color: rgba(0, 0,0, 0.2);
     border: none;
-    /* box-shadow: 0px 0px 8px 0px black; */
 }
 #app .header #add-btn p{
     position: relative;
@@ -623,7 +620,7 @@ body{
 }
 /* msg-header container end */
 
-@media screen and (max-width:1366px) and (min-resolution: 120dpi) {
+@media screen and (min-width:1366px) and (min-resolution: 120dpi) {
     /* adverties btn */
     #app .header #add-btn{
         position: absolute;
@@ -656,4 +653,157 @@ body{
     #app .footer #dev :last-child{
         left: 40.3vw;
     }
+}
+
+@media screen and ( max-width:768px){
+    #app .header #img-logo{
+        width: 8vw;
+        height: 10.5vh;
+    }
+    #app .header #input-box{
+        width: 30vw;
+        height: 6vh;
+        left: 5vw;
+        padding: 0 0 0 15px;
+        font-size: 3vh;
+    }
+    #app .header #search{
+        width: 3.9vw;
+        height: 4.7vh;
+        left: 0.7vw;
+    }
+    #app .header p{
+        left: 3vw;
+    }
+    #app .header #menu-btn{
+        left: 3.3vw;
+    }
+    #app .header #add-btn{
+        position: absolute;
+        width: 17vw;
+        left:78vw;
+        top: 5vh;
+    }
+    #app .slide-show::after{
+        width: 60vw;
+        font-size:6vh;
+        left: 3vw;
+    }
+    #app .header #menu-bar{
+        z-index: 200;
+        position: absolute;
+        left: 25vw;
+        column-gap: 50px ;
+        row-gap: 35px;
+    }
+    #app .header #menu-bar p{
+        position:relative;
+        left: -2.5vw;
+        top: 2vh;
+        height: 6vh;
+        width: 25vw;
+        font-size: 10px;
+    }
+    #app .content-holder{
+        height: 150px;
+        left: 7%;
+    }
+    #app .content-holder p{
+        font-weight: 700;  
+    }
+    #app .content-holder img{
+        position: absolute;
+        height: 120px;
+        width: 130px;
+    }
+
+    #app .footer #dev :first-child{
+        font-size: 4.5vh;
+        left: 3.5%;
+    }
+    #app .footer #dev :nth-child(2){
+        left: 2%;
+        letter-spacing: 15px;
+    }
+    #app .footer #dev :last-child{
+        left: 47vw;
+        top: 18.2vh;
+    }
+    
+    #app .footer #social-medias{
+        top: -0.5vh;
+    }
+    #app .footer #social-medias img{
+        width: 7vw;
+        height: auto;
+    }
+    
+    .footer #social-medias :first-child{
+        position: relative;
+        font-size: 6vh;
+        top: 4vh;
+        left: -1vw;
+    }
+
+    #msg-header{
+        position: fixed;
+        display: flex;
+        width: 25vw;
+        height: 8vh;
+        bottom: 0vh;
+        right: 0vw;
+        border-radius: 10px;
+        background-color: rgb(218, 218, 218);
+    }
+    #msg-header img{
+        position: absolute; 
+        top: 0.6vh;
+        left: 1vw;
+        width: 3.5vw;
+        height: 6.5vh;
+    }
+    #msg-header p{
+        top:1vh;
+        left: 6vh;
+        font-size: 1.8vh;
+    }
+    #chat-bot{
+        width: 24.7vw;
+        height: 55vh;
+    }
+    #chat-bot .user{
+        height: 6vh;
+    }
+    #chat-bot .user:nth-child(2){
+        position: absolute;
+        bottom: 4vh;
+    }
+    #chat-bot .user:nth-child(3){
+        bottom: 24vh;
+    }
+    
+    #chat-bot .bot{
+        height: 6vh;
+    }
+    #chat-bot .bot:nth-child(4){
+        bottom: 14vh;
+        left: 1vw;
+    }
+    #chat-bot .bot:nth-child(5){
+        top: 15vh;
+        left: 1vw;
+    }
+    #chat-bot #header-bot #diana{
+        height: 8vh;
+        width: 6vw;
+    }
+    #chat-bot #header-bot #bot-logo{
+        width: 5vw;
+    }
+    #chat-bot #bot-name{
+        visibility: hidden;
+        font-size: 3vh;
+        left:9vw;
+        top: 0vh;
+    }    
 }
